@@ -1,16 +1,57 @@
-# React + Vite
+# liquid-api-hotel-cards
+A React-based hotel room overview component that fetches live data from the Liquid API and displays dynamic room cards with real time rates and meal plans.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Overview
 
-Currently, two official plugins are available:
+This project was built as part of a coding challenge to demonstrate how to:
+- Fetch and process **real-time data** from a REST API.
+- Normalize and structure API responses.
+- Display hotel room details with **interactive UI components**.
+- Implement **meal plan filtering** dynamically.
+- Use modern **React Hooks (useState, useEffect)** and clean component architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+##  Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ **Live API Data Fetching**
+- Data is fetched via HTTP request using a dedicated API helper function.
+- Automatically updates the UI when the data is loaded.
 
-## Expanding the ESLint configuration
+ **Dynamic Room Cards**
+- Each card displays hotel room info, images, and available rates.
+- User can toggle between different meal plans (Room Only, Breakfast, Half Board, etc.).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ **Meal Plan Filtering**
+- Rates are filtered based on the selected plan.
+- Uses normalized strings to match API-provided data reliably.
+
+ **Clean Component Separation**
+- `RoomsOverview.jsx` handles data fetching, normalization, and filtering.
+- `RoomCard.jsx` focuses purely on the room display logic.
+
+ **Error Handling & Loading States**
+- fallback messages for loading and missing data.
+
+---
+
+##  Key Concepts Demonstrated
+
+- **API Integration:** Fetching data asynchronously with error handling.
+- **State Management:** Handling multiple layers of dynamic UI state.
+- **Data Normalization:** Cleaning inconsistent API responses for reliable rendering.
+- **Reusable Components:** Each part of the UI is modular and isolated.
+- **Semantic JSX + CSS Structure:** Clear class naming for scalable styling.
+
+---
+
+##  Tech Stack
+
+- **React 18+**
+- **JavaScript (ES6+)**
+- **CSS Modules**
+- **Fetch API**
+
+---
+
+>>>>>>> 25bd1a4e2efe5dab2dfca70e24df70564fc814c7
