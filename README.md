@@ -52,6 +52,3 @@ This project was built as part of a coding challenge to demonstrate how to:
 - **CSS Modules**
 - **Fetch API**
 
----
-
->>>>>>> 25bd1a4e2efe5dab2dfca70e24df70564fc814c7
